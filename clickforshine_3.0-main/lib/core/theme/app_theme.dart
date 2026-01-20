@@ -19,18 +19,11 @@ class AppTheme {
       ),
       appBarTheme: AppBarTheme(
         backgroundColor: _darkBackground,
-        elevation: 0,
-        centerTitle: true,
         titleTextStyle: GoogleFonts.montserrat(
           color: Colors.white,
           fontSize: 20,
           fontWeight: FontWeight.w600,
         ),
-      ),
-      textTheme: TextTheme(
-        displayLarge: GoogleFonts.montserrat(color: Colors.white, fontWeight: FontWeight.bold),
-        bodyLarge: GoogleFonts.montserrat(color: Colors.white70),
-        bodyMedium: GoogleFonts.montserrat(color: Colors.white60),
       ),
       cardTheme: CardThemeData(
         color: _darkSurface,
