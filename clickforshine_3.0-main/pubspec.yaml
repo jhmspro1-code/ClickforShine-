@@ -1,17 +1,24 @@
 name: clickforshine
-description: "Projeto Click for Shine"
+description: "A new Flutter project."
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.10.0 <4.0.0' # Esta é a linha que falta no seu erro
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  uuid: ^4.0.0
-  equatable: ^2.0.5
-  firebase_core: ^2.24.0
+  google_fonts: ^6.1.0
   flutter_riverpod: ^2.4.9
-  dio: ^5.4.0
-  camera: ^0.10.5
+  firebase_core: ^2.24.2
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
