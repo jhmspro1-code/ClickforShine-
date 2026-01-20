@@ -1,1 +1,2 @@
-
+- name: Analyze project source
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
