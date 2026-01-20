@@ -1,4 +1,11 @@
-name: click_for_shine
-description: A new Dart project.
+name: clickforshine  # <-- ESTA LINHA É OBRIGATÓRIA
+description: "Descrição do seu projeto"
+version: 1.0.0+1
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # ... suas outras dependências
