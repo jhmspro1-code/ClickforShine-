@@ -1,29 +1,11 @@
-name: Flutter CI
+name: clickforshine
+description: "Seu projeto Flutter"
+publish_to: 'none'
+version: 1.0.0+1
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+environment:
+  sdk: '>=3.10.0 <4.0.0' 
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      # Instala o SDK do Flutter necessário para o seu projeto
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-          cache: true
-
-      # Usa 'flutter pub get' em vez de 'dart pub get'
-      - name: Install dependencies
-        run: flutter pub get
-
-      # Roda a análise ignorando os warnings para o build não travar
-      - name: Analyze project source
-        run: flutter analyze --no-fatal-warnings
+dependencies:
+  flutter:
+    sdk: flutter
