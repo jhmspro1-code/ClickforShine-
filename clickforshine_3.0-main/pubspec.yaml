@@ -1,2 +1,14 @@
 - name: Analyze project source
         run: flutter analyze --no-fatal-infos --no-fatal-warnings
+        name: clickforshine
+description: "Seu projeto Click for Shine"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  uuid: ^4.0.0
