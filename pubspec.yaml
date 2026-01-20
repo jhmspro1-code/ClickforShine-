@@ -1,5 +1,6 @@
 name: clickforshine
-description: "Descrição do seu projeto"
+description: "Seu projeto Flutter"
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -8,4 +9,3 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
