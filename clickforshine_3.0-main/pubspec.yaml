@@ -4,14 +4,14 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.10.0 <4.0.0'
+  sdk: '>=3.10.0 <4.0.0' # Esta é a linha que falta no seu erro
 
 dependencies:
   flutter:
     sdk: flutter
-  uuid: ^4.0.0              
-  equatable: ^2.0.5         
-  firebase_core: ^2.24.0    
-  flutter_riverpod: ^2.4.9  
-  dio: ^5.4.0               
-  camera: ^0.10.5          
+  uuid: ^4.0.0
+  equatable: ^2.0.5
+  firebase_core: ^2.24.0
+  flutter_riverpod: ^2.4.9
+  dio: ^5.4.0
+  camera: ^0.10.5
