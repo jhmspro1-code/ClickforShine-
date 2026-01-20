@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'firebase_options.dart')
+// import 'firebase_options.dart';
 import 'core/theme/app_theme.dart';
 import 'presentation/pages/home_page.dart';
 
@@ -12,7 +12,7 @@ void main() async {
   
   // Inicializar Firebase
   await Firebase.initializeApp(
-  // options: DefaultFirebaseOptions.currentPlatform,
+ // options: DefaultFirebaseOptions.currentPlatform,
   );
 
   runApp(
