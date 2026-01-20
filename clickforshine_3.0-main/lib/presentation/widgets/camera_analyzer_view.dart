@@ -161,7 +161,7 @@ class _CameraAnalyzerViewState extends State<CameraAnalyzerView>
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
             colors: [
-              Colors.black.withOpacity(0.8),
+              Colors.black.withValues(alpha:0.8),
               Colors.transparent,
             ],
           ),
@@ -222,11 +222,13 @@ class _CameraAnalyzerViewState extends State<CameraAnalyzerView>
                       shape: BoxShape.circle,
                       color: _flashMode == FlashMode.torch
                           ? const Color(0xFFD4AF37)
-                          : Colors.grey.withOpacity(0.3),
+                          : Colors.grey.withValues(alpha:0.3),
                     ),
                     child: Icon(
                       Icons.flash_on,
-                      color: _flashMode == FlashMode.torch
+                     _flashMode == FlashMode.torch
+    ? '📸 Posicione a 30cm da superfície'
+    : '⚠️ Ative o flash para continuar',
                           ? Colors.black
                           : Colors.white,
                     ),
@@ -246,7 +248,7 @@ class _CameraAnalyzerViewState extends State<CameraAnalyzerView>
                         width: 4,
                       ),
                       color: _isAnalyzing
-                          ? Colors.grey.withOpacity(0.3)
+                          ? Colors.grey.withValues(alpha:0.3)
                           : Colors.white,
                     ),
                     child: Container(
@@ -275,7 +277,7 @@ class TechnicalGridPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.2)
+      ..color = Colors.white.withValues(alpha:0.2)
       ..strokeWidth = 1;
 
     // Linhas horizontais
@@ -300,7 +302,7 @@ class TechnicalGridPainter extends CustomPainter {
 
     // Círculo central
     final centerPaint = Paint()
-      ..color = Colors.white.withOpacity(0.15)
+      ..color = Colors.white.withValues(alpha:0.15)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2;
 
