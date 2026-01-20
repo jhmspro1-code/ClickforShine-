@@ -1,4 +1,4 @@
-name: clickforshine  # <-- ESTA LINHA É OBRIGATÓRIA
+name: clickforshine
 description: "Descrição do seu projeto"
 version: 1.0.0+1
 
@@ -8,4 +8,4 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # ... suas outras dependências
+
