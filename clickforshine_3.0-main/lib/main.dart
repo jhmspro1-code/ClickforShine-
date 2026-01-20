@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'core/theme/app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  // Comentado para não travar enquanto você não configura o Firebase
-  // await Firebase.initializeApp(); 
-  runApp(const ProviderScope(child: MyApp()));
-}
+class AppTheme {
+  static const Color _darkBackground = Color(0xFF0F0F0F);
+  static const Color _darkSurface = Color(0xFF1A1A1A);
+  static const Color _primaryGold = Color(0xFFD4AF37);
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ClickforShine',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.darkTheme,
-      home: const Scaffold(
-        body: Center(child: Text('ClickforShine Rodando!')),
+  static ThemeData get darkTheme {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: _darkBackground,
+      colorScheme: const ColorScheme.dark(
+        primary: _primaryGold,
+        onPrimary: Colors.black,
+        surface: _darkSurface,
+        onSurface: Colors.white,
+      ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: _darkBackground,
+        titleTextStyle: GoogleFonts.montserrat(
+          color: Colors.white,
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }
