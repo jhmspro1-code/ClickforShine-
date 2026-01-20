@@ -12,7 +12,7 @@ void main() async {
   
   // Inicializar Firebase
   await Firebase.initializeApp(
-  //options: DefaultFirebaseOptions.currentPlatform,
+  // options: DefaultFirebaseOptions.currentPlatform,
   );
 
   runApp(
