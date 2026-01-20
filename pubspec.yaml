@@ -1,4 +1,4 @@
 name: click_for_shine
 description: A new Dart project.
 environment:
-sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
