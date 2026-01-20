@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Tema premium dark mode para ClickforShine
-/// Paleta: Preto Profundo (#000000), Cinza Grafite (#1A1A1A), Dourado (#D4AF37)
+// Tema premium dark mode para ClickforShine
+// Paleta: Preto Profundo (#000000), Cinza Grafite (#1A1A1A), Dourado (#D4AF37)
 class AppTheme {
   // Cores da paleta
   static const Color _darkBackground = Color(0xFF000000);
