@@ -157,13 +157,13 @@ class AppTheme {
         ),
       ),
 
-      // Cards
-      CardThemeData.
-      // color: _darkSurface,
-      // elevation: 0,
-      //shape: RoundedRectangleBorder(
-      // borderRadius: BorderRadius.circular(20),
-      //  side: const BorderSide(color: Color(0xFF333333), width: 1),
+     // Cards
+     // CardThemeData.
+     // color: _darkSurface,
+     // elevation: 0,
+     //shape: RoundedRectangleBorder(
+     // borderRadius: BorderRadius.circular(20),
+     // side: const BorderSide(color: Color(0xFF333333), width: 1),
         ),
       ),
 
