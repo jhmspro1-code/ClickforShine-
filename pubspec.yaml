@@ -1,13 +1,1 @@
-name: clickforshine
-description: "Projeto Click for Shine"
-publish_to: 'none'
-version: 1.0.0+1
 
-environment:
-  sdk: '>=3.10.0 <4.0.0'
-
-dependencies:
-  flutter:
-    sdk: flutter
-  uuid: ^4.0.0
-  camera: ^0.10.5
